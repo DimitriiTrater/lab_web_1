@@ -6,5 +6,9 @@ services:
     volumes:
       - ./code:/code
       - ./site.conf:/etc/nginx/conf.d/site.conf
-    extra_hosts:
-      - "127.0.0.1 php-docker.local"
+    links:
+      - php
+  php:
+    image: php:8-fpm
+    volumes:
+      - ./code:/code
