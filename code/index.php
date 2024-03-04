@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
     <hr>
