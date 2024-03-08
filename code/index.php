@@ -73,6 +73,14 @@
         {
             echo "Делится c остатком";
         }
+        $st = pow(2, 10);
+        $sqrt_245 = sqrt(245);
+        $array_trtrt = [4, 2, 5, 19, 13, 0, 10];
+        $count = 0;
+        foreach ($array_trtrt as $el)
+        {
+            $count += pow($el, 2);
+        }
     ?>
 </body>
 </html>
