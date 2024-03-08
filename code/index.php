@@ -46,6 +46,18 @@
     <?php
         echo 8**2;
     ?>
+    <hr>
+    Task 13: <br>
+    <?php
+        $my_num = 1534145234532452345;
+        $answer = $my_num;
+        $answer += 2;
+        $answer *= 2;
+        $answer -= 2;
+        $answer /= 2;
+        $answer -= $my_num;
+        echo $answer;
+    ?>
 </body>
 </html>
 
