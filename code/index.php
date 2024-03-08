@@ -103,6 +103,13 @@
         for ($i=0; $i < 10; $i++) { 
             $array_with_random_numbers[$i] = rand();
         }
+
+        $a = rand();
+        $b = rand();
+        $a_b_sub_abs = abs($a - $b);
+
+        $abs_arr = array_map("abs", [1, 2, -1, -2, 3, -3]);
+        
     ?>
 </body>
 </html>
