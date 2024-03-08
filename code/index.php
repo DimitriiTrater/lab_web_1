@@ -270,6 +270,16 @@
             echo "<br>";
             echo count($arr) == 3 ? count($arr) : "";
         ?>
+        <hr>
+        Task 19: <br>
+        <?php
+            echo "<br>";
+            for ( $i = 0; $i < 20; $i++ )
+            {
+                echo str_repeat("x", $i);
+                echo "<br>";
+            }
+        ?>
 </body>
 </html>
 
