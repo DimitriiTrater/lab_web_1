@@ -188,6 +188,55 @@
             return array_sum($nums);
         }
     ?>
+    <hr>
+    Task 17: <br>
+    <?php
+        $arr = ['x', 'xx', 'xxx'];
+        function arrayFill($val, $len)
+        {
+            $res = [];
+            for ($i = 0; $i < $len; $i++)
+            {
+                $res[] = $val;
+            }
+        }
+
+        $sum = 0;
+        $arr2d = [[1, 2, 3], [4, 5], [6]];
+        foreach ($arr2d as $array)
+        {
+            foreach ($array as $el)
+            {
+                $sum += $el;
+            }
+        }
+        $number = 1;
+        $created_arr = [[]];
+
+        for ( $i = 0; $i < 3; $i++)
+        {
+            for ($j = 0; $j < 3; $j++)
+            { 
+                $created_arr[$i][$j] = $number;
+                $number++;
+            }
+        }
+
+        $msiv = [2, 5, 3, 9];
+        $result = $msiv[0] * $msiv[1] + $msiv[2] * $msiv[3];
+        echo "<br>" . $result ."<br>";
+
+        $user = ['name' => "Dimitrii", 'surname' => "Trater", 'patronymic' => "nat_movert"];
+        echo "<br>" . $user['name'] . " " . $user['surname'] . " " . $user['patronymic'] . "<br>";
+        $date = ['year' => 2024, 'month' => 3, 'day' => 8];
+        echo '<br>'. $date['year'] . "-" . $date['month'] . "-" . $date['day'] . '<br>';
+    
+        $arr = ['a', 'b', 'c', 'd', 'e'];
+        echo "<br>" . count($arr);
+        echo "<br>" . $arr[count($arr)-1];
+        echo "<br>" . $arr[count($arr)-2];
+
+    ?>
 </body>
 </html>
 
