@@ -109,7 +109,25 @@
         $a_b_sub_abs = abs($a - $b);
 
         $abs_arr = array_map("abs", [1, 2, -1, -2, 3, -3]);
-        
+
+        $num = rand();
+        $dividers = [];
+        for ($i = 1; $i < $num; $i++)
+        {
+            if (!($num % $i))
+            {
+                $dividers[] = $i;
+            }
+        }
+        $arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        $sum = 0;
+        $res = 0;
+        foreach ($arr as $el)
+        {
+            if ($sum > 10) break;
+            $sum += $el;
+            $res++;
+        }
     ?>
 </body>
 </html>
