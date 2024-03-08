@@ -140,6 +140,54 @@
         $my_num = printStringReturnNumber();
         echo $my_num;
     ?>
+    <hr>
+    Task 16: <br>
+    <?php
+        function increaseEnthusiasm($str)
+        {
+            return $str . "!";
+        }
+        echo "<br>";
+        echo increaseEnthusiasm("any_str");
+        function repeatThreeTimes($str)
+        {
+            return $str . $str . $str;
+        }
+        echo "<br>";
+        echo repeatThreeTimes("any_str");
+        echo "<br>";
+        echo increaseEnthusiasm(repeatThreeTimes("any_str"));
+        function cut($str, $len=10)
+        {
+            return substr($str, 0, $len);
+        }
+        echo "<br>";
+        $arr_fro_rec = [1, 2, 3, 4, 5, 6];
+        function print_array($array)
+        {
+            if (!count($array)) return;
+            echo $array[0] . " ";
+            $temp_arr = array_slice($array, 1, count($array));
+            return print_array($temp_arr);
+        }
+        print_array($arr_fro_rec);
+
+        function sum($num)
+        {
+            if (strlen(strval($num)) == 1) return $num;
+            $str_num = str_split(strval($num));
+            $nums = [];
+            foreach ($str_num as $i)
+            {
+                $nums[] = intval($i);
+            }
+            if (array_sum($nums) > 9)
+            {
+                sum(array_sum($nums));
+            }
+            return array_sum($nums);
+        }
+    ?>
 </body>
 </html>
 
