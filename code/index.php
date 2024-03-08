@@ -41,6 +41,11 @@
         $days_per_language = $days / $num_languages;
         echo $days_per_language;
     ?>
+    <hr>
+    Task 12: <br>
+    <?php
+        echo 8**2;
+    ?>
 </body>
 </html>
 
