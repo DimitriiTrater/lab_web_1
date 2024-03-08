@@ -129,6 +129,17 @@
             $res++;
         }
     ?>
+    <hr>
+    Task 15: <br>
+    <?php
+        function printStringReturnNumber()
+        {
+            echo "<br>any_str";
+            return 1;
+        }
+        $my_num = printStringReturnNumber();
+        echo $my_num;
+    ?>
 </body>
 </html>
 
