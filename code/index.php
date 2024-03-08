@@ -81,6 +81,21 @@
         {
             $count += pow($el, 2);
         }
+        $sqrt_379 = sqrt(379);
+        echo $sqrt_379;
+        echo "\n";
+        echo round($sqrt_379);
+        echo "\n";
+        echo round($sqrt_379, 1);
+        echo "\n";
+        echo round($sqrt_379, 2);
+        echo "\n";
+        
+        $sqrt_587 = sqrt(587);
+        $arr_for_sqrt_587 = ["floor" => floor($sqrt_587), "ceil" => ceil($sqrt_587)];
+
+        
+
     ?>
 </body>
 </html>
