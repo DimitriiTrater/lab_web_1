@@ -94,7 +94,9 @@
         $sqrt_587 = sqrt(587);
         $arr_for_sqrt_587 = ["floor" => floor($sqrt_587), "ceil" => ceil($sqrt_587)];
 
-        
+        echo min(4, -2, 5, 19, -130, 0, 10);
+        echo "\n";
+        echo max(4, -2, 5, 19, -130, 0, 10);
 
     ?>
 </body>
