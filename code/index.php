@@ -98,6 +98,11 @@
         echo "\n";
         echo max(4, -2, 5, 19, -130, 0, 10);
 
+        echo rand(1, 100);
+        $array_with_random_numbers = [];
+        for ($i=0; $i < 10; $i++) { 
+            $array_with_random_numbers[$i] = rand();
+        }
     ?>
 </body>
 </html>
