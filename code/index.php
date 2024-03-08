@@ -235,8 +235,41 @@
         echo "<br>" . count($arr);
         echo "<br>" . $arr[count($arr)-1];
         echo "<br>" . $arr[count($arr)-2];
+        ?>
+        <hr>
+        Task 18: <br>
+        <?php
+            function isGreaterThan10($a, $b)
+            {
+                return ($a + $b) > 10;
+            }
+            function isEqual($a, $b)
+            {
+                return ($a == $b);
+            }
+            echo "<br>";
+            $test = 1;
+            echo !$test ? "верно" : "";
 
-    ?>
+            $age = 22;
+            if ($age < 10 || $age > 99) 
+            {
+                echo "age < 10 or age > 99";
+            }
+            else
+            {
+                $sum = 0;
+                $temp = str_split(strval($age));
+                foreach ($temp as $value)
+                {
+                    $sum += intval($value);
+                }
+                echo $sum > 9 ? "Двузначна" : "Однозначна";
+            }
+            $arr = [1, 2, 3];
+            echo "<br>";
+            echo count($arr) == 3 ? count($arr) : "";
+        ?>
 </body>
 </html>
 
