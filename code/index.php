@@ -280,6 +280,23 @@
                 echo "<br>";
             }
         ?>
+        <hr>
+        Task 20: <br>
+        <?php
+            echo "<br>";
+            $array_with_nums = [1,2,3];
+            echo array_sum($array_with_nums)/count($array_with_nums);
+            echo "<br>";
+            echo 100*(1 + 100)/2;
+            $array_with_nums = [4, 9, 16];
+            $array_with_roots = array_map("sqrt", $array_with_nums);
+            echo "<br>";
+            print_array($array_with_roots);
+            echo "<br>";
+            $array_lettern_num = array_combine(range("a", "z"), range(1, 26));
+            $str_with_nums = "1234567890";
+            echo array_sum(str_split($str_with_nums, 2));
+        ?>
 </body>
 </html>
 
