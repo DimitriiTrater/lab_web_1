@@ -24,7 +24,7 @@
     <?php
         $any_name_int = 9;
         echo $any_name_int;
-        echo '\n';
+        echo "\n";
         $any_name_float = 9.23;
         echo $any_name_float;
         echo 12;
@@ -57,6 +57,22 @@
         $answer /= 2;
         $answer -= $my_num;
         echo $answer;
+    ?>
+    <hr>
+    Task 14: <br>
+    <?php
+        $a = 10;
+        $b = 3;
+        echo $a % $b;
+        echo "\n";
+        if (!($a % $b))
+        {
+            echo "Делится";
+        }
+        else 
+        {
+            echo "Делится c остатком";
+        }
     ?>
 </body>
 </html>
