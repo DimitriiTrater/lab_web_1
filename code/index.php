@@ -62,11 +62,7 @@ $a = 10;
 $b = 3;
 echo "Остаток от деления $a на $b равен " . $a % $b;
 echo "\n";
-if (!($a % $b)) {
-    echo "Делится \n";
-} else {
-    echo "Делится c остатком \n";
-}
+echo !($a % $b) ? "Делится \n" : "Делится c остатком \n"; 
 $st = pow(2, 10);
 $sqrt_245 = sqrt(245);
 $arrayTRTR = [4, 2, 5, 19, 13, 0, 10];
@@ -173,7 +169,7 @@ function sum(int $num): int
     $str_num = str_split(strval($num));
     $nums = [];
     foreach ($str_num as $i) {
-        $nums[] = intval($i);
+        $nums[] = (int) $i;
     }
     if (9 < array_sum($nums)) {
         sum(array_sum($nums));
@@ -250,7 +246,7 @@ if (10 > $age || 99 < $age) {
     $sum = 0;
     $temp = str_split(strval($age));
     foreach ($temp as $value) {
-        $sum += intval($value);
+        $sum += (int) $value;
     }
     echo $sum > 9 ? "Двузначна" : "Однозначна";
 }
